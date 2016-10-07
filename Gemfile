@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'unicorn'
-
 # PostgreSQL driver
 gem 'pg'
+gem 'httparty'
 
 # Sinatra driver
 gem 'sinatra'
@@ -18,6 +17,7 @@ gem 'rake'
 gem 'shotgun'
 
 gem 'haml'
+gem 'bcrypt'
 
 group :test do
   gem 'shoulda-matchers'
