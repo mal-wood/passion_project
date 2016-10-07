@@ -32,21 +32,6 @@ APP_NAME = APP_ROOT.basename.to_s
 configure do
   
   # ------------------------------------------------
-  # If you want to share this with the DBC network.
-  # ------------------------------------------------
-  # Get your ip by running this in the console:
-  
-  # $ ifconfig en0 inet
-
-  # You'll see this prompt:
-
-  # en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
-  # inet 192.168.0.101 netmask 0xffffff00 broadcast 192.168.0.255
-
-  # Use your inet and bind it... (copy, past and uncomment)
-
-  # set :bind, '192.168.0.101'
-  # ------------------------------------------------
 
   # By default, Sinatra assumes that the root is the file that calls the configure block.
   # Since this is not the case for us, we set it manually.
@@ -70,9 +55,3 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 
 # Set up the database and models
 require APP_ROOT.join('config', 'database')
-
-
-# TEST (??)
-# before do
-# 	p params
-# end
