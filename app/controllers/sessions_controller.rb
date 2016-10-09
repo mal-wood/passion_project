@@ -7,12 +7,11 @@ get '/sessions/new' do
 end
 
 post '/sessions' do 
-	email = params[:user][:email]
-	password = params[:user][:password]
-	@user = User.find_by(email: params[:user][:email])
-	if @user && User.authenticate(email, password)
-			# session[:user_id] = @user.id
-			# redirect "/users/#{@user.id}"
-			redirect "/"
+	@user = User.authenticate(params[:email], params[:password])
+		if @user
+				redirect "/users/#{user.id}"
+				session[:user_id] = @user.id
+			else
+			redirect "/" 
 		end
 end
