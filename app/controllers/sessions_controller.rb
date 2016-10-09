@@ -1,9 +1,18 @@
-get '/sessions/login' do 
-	erb :'sessions/login'
+get '/inspector' do
+  session.inspect
 end
 
-post '/sessions/login' do 
-	p params
-	# User.authenticate(params[:email], params[:password])
-	# redirect 'users/#{user.id}/'
+get '/sessions/new' do 
+	erb :'sessions/new'
+end
+
+post '/sessions' do 
+	email = params[:user][:email]
+	password = params[:user][:password]
+	@user = User.find_by(email: params[:user][:email])
+	if @user && User.authenticate(email, password)
+			# session[:user_id] = @user.id
+			# redirect "/users/#{@user.id}"
+			redirect "/"
+		end
 end
