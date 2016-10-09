@@ -7,11 +7,12 @@ get '/sessions/new' do
 end
 
 post '/sessions' do 
-	@user = User.authenticate(params[:email], params[:password])
-		if @user
-				redirect "/users/#{user.id}"
-				session[:user_id] = @user.id
+	@user = User.find_by(email: params[:email])
+	if User.authenticate(params[:email], params[:password])
+				session[:id] = @user.id
+				redirect "/"
+				# redirect "/users/#{@user.id}"
 			else
-			redirect "/" 
+			erb :'users/new'
 		end
 end
