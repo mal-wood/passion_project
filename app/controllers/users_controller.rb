@@ -5,9 +5,9 @@ end
 post '/users' do 
 	@user = User.new(params[:user])
 	if @user.save 
-		redirect '/users/#{@user.id}'
+		redirect "/users/#{@user.id}"
 	else 
-		erb :index
+		erb :'users/new'
 	end
 end 
 
