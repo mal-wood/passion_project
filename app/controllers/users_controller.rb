@@ -11,9 +11,14 @@ post '/users' do
 	end
 end 
 
+get '/users/testing' do 
+	erb :'users/testing'
+end
+
 get '/users/:id' do  
 	@user = User.find(params[:id])
 	erb :'users/show'
 end
+
 
 
