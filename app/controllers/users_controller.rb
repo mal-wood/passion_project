@@ -1,3 +1,5 @@
+require_relative '../models/recipescraper'
+
 get '/users/new' do 
 	erb :'users/new'
 end
@@ -19,6 +21,14 @@ get '/users/:id' do
 	@user = User.find(params[:id])
 	erb :'users/show'
 end
+
+post '/testing' do 
+	@recipe_url = params[:recipe_url]
+	@scraped_recipe = RecipeScraper.parse_url(@recipe_url)
+	p @scraped_recipe
+	erb :'users/testing'
+end 
+
 
 
 
