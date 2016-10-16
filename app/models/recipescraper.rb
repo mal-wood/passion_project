@@ -33,7 +33,7 @@ module RecipeScraper
 		directions = directions.split(".")
 		directions = 
 
-		Recipe.new(title: title, ingredients: ingredients, directions: directions)
+		Recipe.create(title: title, ingredients: ingredients, directions: directions, user_id: 1)
 	end
 
 end

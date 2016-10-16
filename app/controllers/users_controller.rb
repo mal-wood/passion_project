@@ -22,12 +22,6 @@ get '/users/:id' do
 	erb :'users/show'
 end
 
-post '/testing' do 
-	@recipe_url = params[:recipe_url]
-	@scraped_recipe = RecipeScraper.parse_url(@recipe_url)
-	erb :'users/testing'
-end 
-
 
 
 

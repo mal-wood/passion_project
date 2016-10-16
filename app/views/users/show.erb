@@ -1,7 +1,7 @@
 <h1> Howdy, <%= @user.first_name %>! Welcome to your recipe box.</h1>
 
 <h2> Enter a recipe URL into the box below: </h2>
-<form action="/testing" method="post">
+<form action="/recipes/new" method="get">
   <input type="text" name="recipe_url">
   <input type="submit">
 </form>
