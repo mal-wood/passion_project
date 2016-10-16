@@ -1,2 +1,18 @@
-<h1> Here it is... </h1>
-<%= @scraped_recipe%>
+<h1><%= @scraped_recipe.title%></h1>
+	<h2> Ingredients </h2>
+		<ul style="list-style-type:none">
+			<% @scraped_recipe.ingredients.each do |ingredient| %>
+				<li contenteditable="true"><%= ingredient %></li>
+			<% end %>
+		</ul>
+	<h2> Directions </h2>
+		<ol>
+			<% @scraped_recipe.directions.each do |direction| %>
+			<li><p><%= direction %></p></li>
+			<%end%>
+		</ol>
+	<form action="/recipes" method="post">
+		<input type="button" value="Save to my box">
+	</form>
+
+ 

@@ -31,10 +31,9 @@ module RecipeScraper
 		
 		directions = nokogiri_object.css('div.directions--section__steps').text
 		directions = directions.split(".")
-		p title
-		p ingredients
-		p directions
-		# directions.each {|step| p step}
+		directions = 
+
+		Recipe.new(title: title, ingredients: ingredients, directions: directions)
 	end
 
 end

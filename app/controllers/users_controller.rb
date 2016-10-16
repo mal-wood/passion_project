@@ -25,7 +25,6 @@ end
 post '/testing' do 
 	@recipe_url = params[:recipe_url]
 	@scraped_recipe = RecipeScraper.parse_url(@recipe_url)
-	p @scraped_recipe
 	erb :'users/testing'
 end 
 

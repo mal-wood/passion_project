@@ -1,4 +1,9 @@
 * {
-	background-color: #E5E1D1;
-	text-align: center;
+	background-color: #D5FBFF;
+	line-height: 100%;
+	font-family: 'Special Elite', cursive;
+}
+
+ol {
+	text-align: left;
 }
