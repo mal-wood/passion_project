@@ -12,6 +12,12 @@ post '/sessions' do
  				session[:id] = @user.id
  				redirect "/users/#{@user.id}"
  			else
+ 				redirect '/users/new'
  			erb :'users/new'
  		end
  end
+
+get '/sessions/delete' do 
+	session.clear 
+	redirect '/'
+end

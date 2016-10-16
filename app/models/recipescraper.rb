@@ -20,20 +20,23 @@ module RecipeScraper
 		clean_response = HTMLWhitespaceCleaner.clean(html_body)
 		#turns HTML into Nokogiri object 
 		nokogiri_object = Nokogiri.parse(clean_response)
-		
+		recipe_info = []
 		title = nokogiri_object.css('title').text
 		title = title.gsub(" - Allrecipes.com", "")
-		
+		recipe_info << title 
+
 		ingredients = nokogiri_object.css('li.checkList__line').text
 		ingredients = ingredients.gsub("ADVERTISEMENT", " +")
 		ingredients = ingredients.gsub("Add all ingredients to list", "")
 		ingredients = ingredients.split(" +")
+		recipe_info << ingredients
 		
 		directions = nokogiri_object.css('div.directions--section__steps').text
 		directions = directions.split(".")
-		directions = 
+		recipe_info << directions 
 
-		Recipe.create(title: title, ingredients: ingredients, directions: directions, user_id: 1)
+		recipe_info
 	end
 
-end
+end 
+

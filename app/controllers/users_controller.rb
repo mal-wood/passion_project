@@ -1,15 +1,16 @@
 require_relative '../models/recipescraper'
 
 get '/users/new' do 
-	erb :'users/new'
+	erb :'users/new', layout: false
 end
 
 post '/users' do 
 	@user = User.new(params[:user])
 	if @user.save 
+		session[:id] = @user.id
 		redirect "/users/#{@user.id}"
 	else 
-		erb :'users/new'
+		erb :'users/new', layout: false
 	end
 end 
 

@@ -1,6 +1,9 @@
 <h1> Testing </h1>
+
 <% @recipes.each do |recipe| %> 
-<ul>
-<li><%= recipe.title%></li>
-</ul>
+	<% if recipe.user_id == session[:id] %>
+		<ul>
+		<li><%= recipe.title%></li>
+		</ul>
 	<% end %>
+<% end %>

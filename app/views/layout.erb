@@ -10,9 +10,23 @@
   <script src="/js/application.js"></script>
  
 
-  <title></title>
+  <title>Welcome to Recipe Box!</title>
 </head>
 <body>
+	<% if logged_in? %>
+        <a href="/sessions/delete">Logout</a>
+      <% else %>
+      <%= @errors %>
+        <form align="center" action="/sessions" method="post">
+          <div><label>Email:</label><input type="email" name="email">
+
+          <label>Password:</label><input type="password" name="password">
+   
+          <input type="submit" value="Login">
+        <text>   </text>
+        <a href="/users/new">Create Account</a>
+        </div></form>
+      <% end %>
   <%= yield %>
 </body>
 </html>
