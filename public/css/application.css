@@ -56,4 +56,6 @@ input {
 	text-align: left;
 	display: inline-block;
 	width: 90%;
+	padding: 0px;
+	margin: 0px;
 }
