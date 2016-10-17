@@ -1,16 +1,19 @@
 * {
-	background-color: #D5FBFF;
+	background-color: #FFFFFF;
 	line-height: 100%;
-	font-family: 'Special Elite', cursive;
+	font-family: 'Cormorant Garamond', serif;
 	text-align: center;
 }
 
 h1 {
 	text-align: center;
+	margin-top: 25px;
 }
 
 ol {
 	text-align: left;
+	display: inline-block;
+	width: 90%;
 }
 
 li {
@@ -31,3 +34,26 @@ input {
 	width: 90%;
 }
 
+#form_label {
+	margin-right: 5px;
+}
+
+#carrot {
+	width: 12%;
+}
+
+#ingredients_list {
+	text-align: center;
+	display: inline-block;
+}
+
+#show_page {
+	text-align: center;
+	display: inline-block;
+}
+
+#directions_list {
+	text-align: left;
+	display: inline-block;
+	width: 90%;
+}

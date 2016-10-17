@@ -34,6 +34,5 @@ group :test, :development do
 end
 
 group :api_helpers do
-  gem 'httparty'
   gem 'dotenv'
 end

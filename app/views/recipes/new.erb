@@ -1,12 +1,12 @@
 <h1><%= @recipe.title%></h1>
 	<h2> Ingredients </h2>
-		<ul style="list-style-type:none">
+		<ul id="ingredients_list">
 			<% @recipe.ingredients.each do |ingredient| %>
 				<li contenteditable="true"><%= ingredient %></li>
 			<% end %>
 		</ul>
 	<h2> Directions </h2>
-		<ol>
+		<ol id="directions_list">
 			<% @recipe.directions.each do |direction| %>
 			<li><p><%= direction %></p></li>
 			<%end%>
