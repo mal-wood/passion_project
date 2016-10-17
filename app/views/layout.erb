@@ -14,7 +14,7 @@
 </head>
 <body>
 	<% if logged_in? %>
-        <a href="/sessions/delete">Logout</a>
+        <span id="logout_link"><a href="/sessions/delete">Logout</a></span>
       <% else %>
       <%= @errors %>
         <form align="center" action="/sessions" method="post">
