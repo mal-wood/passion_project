@@ -1,6 +1,6 @@
 <h1><%= @recipe.title%></h1>
 	<h2> Ingredients </h2>
-		<ul style="list-style-type:none">
+		<ul id ="show_page">
 			<% @recipe.ingredients.each do |ingredient| %>
 				<li contenteditable="true"><%= ingredient %></li>
 			<% end %>

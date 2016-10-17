@@ -4,8 +4,7 @@
 
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/application.css">
-	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
  
@@ -14,17 +13,17 @@
 </head>
 <body>
 	<% if logged_in? %>
-        <span id="logout_link"><a href="/sessions/delete">Logout</a></span>
+        <span id="logout_link"><a href="/sessions/delete">logout</a></span>
       <% else %>
       <%= @errors %>
         <form align="center" action="/sessions" method="post">
-          <div><label>Email:</label><input type="email" name="email">
+          <div><label id="form_label">email:</label><input type="email" name="email">
 
-          <label>Password:</label><input type="password" name="password">
+          <label id="form_label">password:</label><input type="password" name="password">
    
           <input type="submit" value="Login">
         <text>   </text>
-        <a href="/users/new">Create Account</a>
+        <a href="/users/new">create account</a>
         </div></form>
       <% end %>
   <%= yield %>

@@ -1,10 +1,10 @@
 <h1> Howdy, <%= @user.first_name %>! Welcome to your recipe box.</h1>
 
-<h2> Add recipe to collection: </h2>
-<form id="add_recipe" action="/recipes/new" method="get">
-  <input type="text" name="recipe_url">
-  <input type="submit">
-</form>
+<h2> Add recipe to my collection: </h2>
+	<form id="add_recipe" action="/recipes/new" method="get">
+	  <input type="text" name="recipe_url">
+	  <input type="submit" value="Save">
+	</form>
 <h1> OR </h1>
 
 <h2><a href="/recipes">Open box</a></h2>
