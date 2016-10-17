@@ -18,6 +18,8 @@ gem 'shotgun'
 
 gem 'haml'
 gem 'bcrypt'
+gem 'ngrok-tunnel'
+
 
 group :test do
   gem 'shoulda-matchers'
@@ -29,4 +31,9 @@ end
 group :test, :development do
   gem 'factory_girl'
   gem 'faker'
+end
+
+group :api_helpers do
+  gem 'httparty'
+  gem 'dotenv'
 end

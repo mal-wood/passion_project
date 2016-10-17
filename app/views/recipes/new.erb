@@ -1,0 +1,18 @@
+<h1><%= @recipe.title%></h1>
+	<h2> Ingredients </h2>
+		<ul style="list-style-type:none">
+			<% @recipe.ingredients.each do |ingredient| %>
+				<li contenteditable="true"><%= ingredient %></li>
+			<% end %>
+		</ul>
+	<h2> Directions </h2>
+		<ol>
+			<% @recipe.directions.each do |direction| %>
+			<li><p><%= direction %></p></li>
+			<%end%>
+		</ol>
+	<form action="/recipes" method="get">
+		<button name="save_recipe" type="submit">Go to my recipe box</button>
+	</form>
+
+ 

@@ -1,0 +1,33 @@
+* {
+	background-color: #D5FBFF;
+	line-height: 100%;
+	font-family: 'Special Elite', cursive;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+ol {
+	text-align: left;
+}
+
+li {
+	text-align: left;
+}
+
+form {
+	margin-top: 20px;
+}
+
+input {
+	text-align: left;
+}
+
+#logout_link {
+	text-align: left;
+	display: inline-block;
+	width: 90%;
+}
+
