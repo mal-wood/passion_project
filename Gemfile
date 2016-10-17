@@ -19,6 +19,7 @@ gem 'shotgun'
 gem 'haml'
 gem 'bcrypt'
 gem 'ngrok-tunnel'
+gem 'nokogiri'
 
 
 group :test do
