@@ -11,6 +11,9 @@
 			<li><p><%= direction %></p></li>
 			<%end%>
 		</ol>
-	<form action="/recipes" method="get">
+	<form action="/user/<%=@user.id%>/recipes" method="get">
 		<button name="save_recipe" type="submit">Go to my recipe box</button>
+	</form>
+	<form action="/sms/<%=@recipe.id%>" method="post">
+		<button name="send_text" type="submit">Send ingredients</button>
 	</form>

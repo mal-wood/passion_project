@@ -1,13 +1,16 @@
 * {
 	background-color: #FFFFFF;
+	color: #4D3E11;
 	line-height: 100%;
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Old Standard TT', serif;
 	text-align: center;
 }
 
 h1 {
 	text-align: center;
 	margin-top: 25px;
+	font-size: 300%;
+	font-family: 'Cabin Sketch', cursive;
 }
 
 ol {
@@ -36,6 +39,7 @@ input {
 
 #form_label {
 	margin-right: 5px;
+	font-family: 'Cabin Sketch', cursive;
 }
 
 #carrot {

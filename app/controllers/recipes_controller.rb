@@ -4,9 +4,9 @@ get '/user/:id/recipes' do
 	erb :'recipes/index'
 end 
 
-get '/user/:user_id/recipes/new' do 
+get '/user/:id/recipes/new' do 
+	@user = User.find(params[:id])
 	@recipe_url = params[:recipe_url]
-	p @recipe_url
 	@scraped_recipe = RecipeScraper.parse_url(@recipe_url)
 	@recipe = Recipe.create(title: @scraped_recipe[0], ingredients: @scraped_recipe[1], directions: @scraped_recipe[2], user_id: session[:id])
 	erb :'recipes/new'
@@ -16,7 +16,10 @@ post '/recipes' do
 	redirect '/recipes'
 end 
 
-get '/user/:user_id/recipes/:id' do
-	@recipe = Recipe.find(params[:id])
+get '/user/:user_id/recipes/:id' do 
+		@user = User.find(params[:user_id])
+		@recipe = Recipe.find(params[:id])
 		erb :'recipes/show'
-end 
+end
+
+ 
