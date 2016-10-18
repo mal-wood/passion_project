@@ -8,7 +8,7 @@
 
 h1 {
 	text-align: center;
-	margin-top: 25px;
+	margin-top: 5px;
 	font-size: 300%;
 	font-family: 'Cabin Sketch', cursive;
 }
@@ -31,6 +31,23 @@ input {
 	text-align: left;
 }
 
+.change_color {
+	color: #468966;
+}
+
+.color_button {
+    background-color: #468966;
+    border: none;
+    color: white;
+    padding: 4px 20px;
+    border-radius: 300px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Cabin Sketch', cursive;
+}
+
 #logout_link {
 	text-align: left;
 	display: inline-block;
@@ -38,7 +55,8 @@ input {
 }
 
 #form_label {
-	margin-right: 5px;
+	margin-right: 10px;
+	margin-left: 10px;
 	font-family: 'Cabin Sketch', cursive;
 }
 
@@ -51,15 +69,21 @@ input {
 	display: inline-block;
 }
 
+#numbers {
+	margin-left: 20%;
+}
 #show_page {
 	text-align: center;
 	display: inline-block;
 }
 
-#directions_list {
+#left_align{
 	text-align: left;
-	display: inline-block;
+	display: block;
 	width: 90%;
 	padding: 0px;
-	margin: 0px;
+}
+
+#password_input {
+	margin-right: 5px;
 }

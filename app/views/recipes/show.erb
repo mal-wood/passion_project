@@ -1,14 +1,14 @@
 <h1><%= @recipe.title%></h1>
-	<h2> Ingredients </h2>
+	<h2 class="change_color"> Ingredients </h2>
 		<ul id ="show_page">
 			<% @recipe.ingredients.each do |ingredient| %>
 				<li contenteditable="true"><%= ingredient %></li>
 			<% end %>
 		</ul>
-	<h2> Directions </h2>
-		<ol>
+	<h2 class="change_color"> Directions </h2>
+		<ol id="numbers">
 			<% @recipe.directions.each do |direction| %>
-			<li><p><%= direction %></p></li>
+			<li><p><span id="left_align"><%= direction %></span></p></li>
 			<%end%>
 		</ol>
 	<form action="/user/<%=@user.id%>/recipes" method="get">

@@ -7,5 +7,8 @@
 	</form>
 <h1> OR </h1>
 
-<h2><a href="/user/<%=@user.id%>/recipes">Open box</a></h2>
+<form action="/user/<%=@user.id%>/recipes" method="get">
+	<button type="submit" name="open_box" class="color_button">"Open box"</button>
+</form>
+<!-- <h2><a href="/user/<%=@user.id%>/recipes">Open box</a></h2> -->
 
