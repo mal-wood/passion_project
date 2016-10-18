@@ -133,6 +133,12 @@ namespace :db do
   end
 end
 
+desc "Send text"
+task :send_text do 
+  p ENV['TWILIO_ACCOUNT_SID']
+  Notifier::send_sms_notification("+17248126820", "THING")
+end 
+
 desc 'Start IRB with application environment loaded'
 task "console" do
   exec "irb -r./config/environment"

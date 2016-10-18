@@ -4,6 +4,7 @@
 ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
 require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])
 
+
 # Require gems we care about
 require 'rubygems'  
 
@@ -29,6 +30,7 @@ require 'haml'
 require 'dotenv'
 Dotenv.load
 
+require_relative '../lib/notifier'
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
