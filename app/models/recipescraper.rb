@@ -32,7 +32,7 @@ module RecipeScraper
 		recipe_info << ingredients
 		
 		directions = nokogiri_object.css('div.directions--section__steps').text
-		directions = directions.gsub(/(m)[A-Z]/, /[A-Z]/)
+		directions = directions.gsub(/(m)[A-Z]/, " ")
 		directions = directions.split(".")
 		recipe_info << directions 
 
