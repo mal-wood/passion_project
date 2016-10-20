@@ -4,13 +4,13 @@
 	<% if recipe.user_id == session[:id] %>
 		<table>
 			<tr>	
-				<td>
+				<td id="recipe_list">
 					<a href="/user/<%=@user.id%>/recipes/<%="#{recipe.id}"%>"><%= recipe.title%></a>
 				</td>
 				<td>
 					<form action="/user/<%=@user.id%>/recipes/<%="#{recipe.id}"%>" method="post">
 						<input type="hidden" name="_method" value="delete">
-						<button id="new_recipe" name="new_recipe" type="submit">Delete</button>
+						<button class="delete_button" id="new_recipe" name="new_recipe" type="submit">Delete</button>
 					</form>
 				</td>
 			</tr>

@@ -1,4 +1,4 @@
-<h1><%= @recipe.title%></h1>
+<h1 id="recipe_title"><%= @recipe.title%></h1>
 	<h2 class="change_color"> Ingredients </h2>
 		<ul id ="show_page">
 			<% @recipe.ingredients.each do |ingredient| %>
@@ -11,12 +11,9 @@
 			<li><p><span id="left_align"><%= direction %></span></p></li>
 			<%end%>
 		</ol>
-	<form action="/user/<%=@user.id%>/recipes" method="get">
-		<button name="save_recipe" type="submit">Go to my recipe box</button>
-	</form>
 	<form action="/sms/<%=@recipe.id%>" method="post">
-		<button name="send_text" type="submit">Send ingredients</button>
+		<button name="send_text" type="submit" class="color_button">Send ingredients</button>
 	</form>
 	<form action="/users/<%=@user.id%>" method="get">
-	<button id="new_recipe" name="new_recipe" type="submit">Add new recipe</button>
-</form>
+		<button class="color_button" id="new_recipe" name="new_recipe" type="submit">Add new recipe</button>
+	</form>

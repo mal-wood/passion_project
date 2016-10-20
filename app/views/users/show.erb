@@ -1,14 +1,9 @@
-<h1> <%= @user.first_name %>'s recipe box.</h1>
+<h1 id="landing_text"> <%= @user.first_name %>'s recipe box.</h1>
 
 <h2> Add recipe to my collection: </h2>
 	<form id="add_recipe" action="/user/<%=@user.id%>/recipes/new" method="get">
-	  <input type="text" name="recipe_url">
-	  <input type="submit" value="Save">
+	  <input type="text" name="recipe_url"><br><br>
+	  <input type="submit" value="Save" class="color_button">
 	</form>
-<h1> OR </h1>
-
-<form action="/user/<%=@user.id%>/recipes" method="get">
-	<button type="submit" name="open_box" class="color_button">open box</button>
-</form>
 
 

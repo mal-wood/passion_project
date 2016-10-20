@@ -13,10 +13,18 @@ h1 {
 	font-family: 'Cabin Sketch', cursive;
 }
 
+h2 {
+	font-family: 'Cabin Sketch', cursive;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
 ol {
 	text-align: left;
 	display: inline-block;
 	width: 90%;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 li {
@@ -32,27 +40,67 @@ input {
 }
 
 .change_color {
-	color: #468966;
+	color: #EFC94C;
+}
+
+.delete_button {
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: bold;
+	margin-left: 15px;
+  background-color: #EFC94C;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
 }
 
 .color_button {
-		font-family: 'Cormorant Garamond', serif;
-		font-weight: bold;
-    background-color: #EFC94C;
-    border: none;
-    color: white;
-    padding: 10px 30px;
-    border-radius: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: bold;
+  background-color: #EFC94C;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+#recipe_list {
+	font-size: 20px;
+	padding-left: 40px;
+}
+
+#register_button {
+	margin-top: 5px;
+}
+
+#recipe_title {
+	font-size: 40px;
+	margin-top: 20px;
 }
 
 #logout_link {
+	padding-top: 10px;
 	text-align: left;
+	height: 30px;
 	display: inline-block;
-	width: 90%;
+	width: 100%;
+	font-size: 20px;
+	background-color: #7ECEFC;
+}
+
+#logout_text {
+	color:#FFFFFF;
+	text-decoration: none;
+	background-color: #7ECEFC;
+	padding-left: 10px;
 }
 
 #form_label {
@@ -76,6 +124,10 @@ font-size: 100px;
 #login_bar {
 	text-align: center;
 	display: inline-block;
+}
+
+#landing_text{
+	margin-top: 20px;
 }
 
 #ingredients_list {

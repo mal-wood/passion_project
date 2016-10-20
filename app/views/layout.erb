@@ -15,7 +15,11 @@
 </head>
 <body>
 	<% if logged_in? %>
-        <span id="logout_link"><a href="/sessions/delete">logout</a></span>
+        <span id="logout_link">
+          <a href="/sessions/delete" id="logout_text">
+            <span id="logout_text">Logout</span></a>
+          <a href="/user/<%=session.id%>/recipes" id="logout_text">My Recipe Box</a>
+        </span>
       <% else %>
       <%= @errors %>
        <!--  <form align="center" action="/sessions" method="post">
