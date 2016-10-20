@@ -9,7 +9,7 @@ get '/user/:id/recipes/new' do
 	@recipe_url = params[:recipe_url]
 	@scraped_recipe = RecipeScraper.parse_url(@recipe_url)
 	@recipe = Recipe.create(title: @scraped_recipe[0], ingredients: @scraped_recipe[1], directions: @scraped_recipe[2], user_id: session[:id])
-	erb :'recipes/new'
+	erb :'recipes/show'
 end 
 
 post '/recipes' do 
