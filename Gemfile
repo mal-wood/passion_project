@@ -16,12 +16,12 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem 'twilio-ruby'
+
 gem 'haml'
 gem 'bcrypt'
 gem 'ngrok-tunnel'
 gem 'nokogiri'
-
-gem 'twilio-ruby'
 
 group :test do
   gem 'shoulda-matchers'

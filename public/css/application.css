@@ -2,7 +2,7 @@
 	background-color: #FFFFFF;
 	color: #4D3E11;
 	line-height: 100%;
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Cormorant Garamond', serif;
 	text-align: center;
 }
 
@@ -36,16 +36,17 @@ input {
 }
 
 .color_button {
-    background-color: #468966;
+		font-family: 'Cormorant Garamond', serif;
+		font-weight: bold;
+    background-color: #EFC94C;
     border: none;
     color: white;
-    padding: 4px 20px;
-    border-radius: 300px;
+    padding: 10px 30px;
+    border-radius: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
-    font-family: 'Cabin Sketch', cursive;
+    font-size: 20px;
 }
 
 #logout_link {
@@ -55,13 +56,26 @@ input {
 }
 
 #form_label {
+	font-family: 'Cormorant Garamond', serif;
 	margin-right: 10px;
 	margin-left: 10px;
-	font-family: 'Cabin Sketch', cursive;
+	font-size: 20px;
+}
+
+#carrot_image{
+margin-top: 40px;
+margin-bottom: 0px;
+font-size: 100px;
 }
 
 #carrot {
+	margin-top: 0px;
 	width: 12%;
+}
+
+#login_bar {
+	text-align: center;
+	display: inline-block;
 }
 
 #ingredients_list {

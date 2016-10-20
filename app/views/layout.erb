@@ -6,7 +6,7 @@
   <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
   <link rel="stylesheet" href="/css/application.css">
   <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
  
@@ -18,15 +18,15 @@
         <span id="logout_link"><a href="/sessions/delete">logout</a></span>
       <% else %>
       <%= @errors %>
-        <form align="center" action="/sessions" method="post">
-          <div><label id="form_label">email:</label><input type="email" name="email">
+       <!--  <form align="center" action="/sessions" method="post">
+          <div id="login_bar"><label id="form_label">email:</label><input type="email" name="email">
 
           <label id="form_label">password:</label><input id="password_input" type="password" name="password">
    
           <input class="color_button" type="submit" value="login">
         <text>   </text>
         <a href="/users/new">create account</a>
-        </div></form>
+        </div></form> -->
       <% end %>
   <%= yield %>
 </body>

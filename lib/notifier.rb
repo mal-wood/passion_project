@@ -1,3 +1,5 @@
+require 'twilio-ruby'
+
 module Notifier
   def self.send_sms_notification(number, body)
     client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']

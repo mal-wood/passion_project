@@ -17,9 +17,14 @@ post '/recipes' do
 end 
 
 get '/user/:user_id/recipes/:id' do 
-		@user = User.find(params[:user_id])
-		@recipe = Recipe.find(params[:id])
-		erb :'recipes/show'
+	@user = User.find(params[:user_id])
+	@recipe = Recipe.find(params[:id])
+	erb :'recipes/show'
 end
 
- 
+delete '/user/:user_id/recipes/:id' do 
+	@user = User.find(params[:user_id])
+	@recipe = Recipe.find(params[:id])
+	@recipe.destroy
+	redirect "/user/#{@user.id}/recipes"
+end
