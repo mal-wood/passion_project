@@ -2,8 +2,18 @@
 
 <% @recipes.each do |recipe| %> 
 	<% if recipe.user_id == session[:id] %>
-		<ul>
-		<li><a href="/user/<%=@user.id%>/recipes/<%="#{recipe.id}"%>"><%= recipe.title%></a></li>
-		</ul>
+		<table>
+			<tr>	
+				<td>
+					<a href="/user/<%=@user.id%>/recipes/<%="#{recipe.id}"%>"><%= recipe.title%></a>
+				</td>
+				<td>
+					<form action="/user/<%=@user.id%>/recipes/<%="#{recipe.id}"%>" method="post">
+						<input type="hidden" name="_method" value="delete">
+						<button id="new_recipe" name="new_recipe" type="submit">Delete</button>
+					</form>
+				</td>
+			</tr>
+		</table>
 	<% end %>
 <% end %>
