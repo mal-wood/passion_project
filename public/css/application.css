@@ -51,9 +51,19 @@ input {
 }
 
 footer {
-	display: block;
 	height: 20px;
-	color: #EFC94C;
+	position:absolute;
+	display: block;
+}
+
+#footer{
+	background-color: #B64926;
+	height:100px;
+	display: block;
+	height: 100px;
+	position:absolute;
+  bottom:0;
+  width:100%;
 }
 
 .change_color {
