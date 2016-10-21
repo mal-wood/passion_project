@@ -6,6 +6,10 @@
 	text-align: center;
 }
 
+body, html {
+	height: 100%;
+}
+
 h1 {
 	text-align: center;
 	margin-top: 5px;
@@ -50,22 +54,6 @@ input {
 	text-align: left;
 }
 
-footer {
-	height: 20px;
-	position:absolute;
-	display: block;
-}
-
-#footer{
-	background-color: #B64926;
-	height:100px;
-	display: block;
-	height: 100px;
-	position:absolute;
-  bottom:0;
-  width:100%;
-}
-
 .change_color {
 	color: #EFC94C;
 }
@@ -89,7 +77,7 @@ footer {
 .logout_text {
 	color:#FFFFFF;
 	text-decoration: none;
-	background-color: #7ECEFC;
+	background-color: #22BDC4;
 	padding-left: 10px;
 }
 
@@ -141,7 +129,7 @@ footer {
 	display: inline-block;
 	width: 100%;
 	font-size: 20px;
-	background-color: #7ECEFC;
+	background-color: #22BDC4;
 }
 
 
