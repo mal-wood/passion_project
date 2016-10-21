@@ -1,11 +1,11 @@
-<h1> My recipes: </h1>
-
-<% @recipes.each do |recipe| %> 
-	<% if recipe.user_id == session[:id] %>
+<h1 id="my_recipe"> My recipes: </h1>
+	<div id="table_div">
 		<table>
+				<% @recipes.each do |recipe| %> 
+				<% if recipe.user_id == session[:id] %>
 			<tr>	
 				<td id="recipe_list">
-					<a href="/user/<%=@user.id%>/recipes/<%="#{recipe.id}"%>"><%= recipe.title%></a>
+					<a href="/user/<%=@user.id%>/recipes/<%="#{recipe.id}"%>" id="recipe_link"><%= recipe.title%></a>
 				</td>
 				<td>
 					<form action="/user/<%=@user.id%>/recipes/<%="#{recipe.id}"%>" method="post">
@@ -14,6 +14,9 @@
 					</form>
 				</td>
 			</tr>
+			<% end %>
+			<% end %>
+			</tr>
 		</table>
-	<% end %>
-<% end %>
+	</div>
+

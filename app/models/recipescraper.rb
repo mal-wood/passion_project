@@ -5,9 +5,6 @@ require_relative 'HTMLWhitespaceCleaner'
 
 module RecipeScraper
 
-# puts "URL:"
-# user_input = gets.chomp
-# url = user_input
 
 	def self.parse_url(url)
 		# standard HTTP Request
