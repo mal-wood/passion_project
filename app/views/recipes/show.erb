@@ -14,7 +14,6 @@
 	<form id="send_ingredients" action="/sms/<%=@recipe.id%>" method="post">
 		<button name="send_text" type="submit" class="color_button">Send ingredients</button>
 	</form>
-<!-- put section -->
 	<form id="edit_ingredients" action="/user/<%=session[:id]%>/recipes/<%=@recipe.id%>/edit" method="get">
 		<button name="edit_recipe" type="submit" class="color_button">Edit ingredients</button>
 	</form>

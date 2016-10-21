@@ -188,6 +188,10 @@ margin-bottom: 0px;
 font-size: 100px;
 }
 
+#edit_ingredients {
+	margin-top: 0px;
+}
+
 #carrot {
 	margin-top: 0px;
 	width: 12%;

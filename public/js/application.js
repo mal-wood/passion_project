@@ -8,8 +8,7 @@ var deletebuttonListener = function(){
 	event.preventDefault();
 
 	var deleteForm = $(this).parent(); 
-	var url = deleteForm.attr('action')
-
+	var url = deleteForm.attr
 	var request = $.ajax ({
 		url: url,
 		method: 'delete'
