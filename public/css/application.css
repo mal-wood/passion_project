@@ -81,7 +81,8 @@ ol {
 }
 
 li {
-	text-align: left;
+/*	text-align: left;*/
+list-style: none
 }
 
 form {
@@ -224,8 +225,6 @@ font-size: 100px;
 	align: center;
 	text-align: center;
 	display: inline-block;
-	padding-left: 700px;
-	padding-right:600px;
 }
 
 #left_align{
