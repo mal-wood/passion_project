@@ -209,7 +209,6 @@ font-size: 100px;
 
 #ingredients_list {
 	text-align: center;
-	display: block;
 }
 
 
@@ -222,8 +221,11 @@ font-size: 100px;
 	padding-right: 40%
 }
 #show_page {
+	align: center;
 	text-align: center;
 	display: inline-block;
+	padding-left: 700px;
+	padding-right:600px;
 }
 
 #left_align{
@@ -235,4 +237,9 @@ font-size: 100px;
 
 #password_input {
 	margin-right: 5px;
+}
+
+#ingredients_align {
+	text-align: center;
+	display: block;
 }
