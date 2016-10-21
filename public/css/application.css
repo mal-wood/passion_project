@@ -22,6 +22,7 @@ html {
   padding-top: 0px;
   max-width: 100%;
   width: 100%;
+  padding-bottom: 20px;
 }
 
 .demo h1 {
@@ -33,8 +34,8 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 2rem;
-  background-color: #A13E28;
+  padding: 3rem;
+  background-color: #821F15;
   text-align: center;
   color: #FFFFFF;
 }
@@ -99,7 +100,7 @@ input {
 	font-family: 'Cormorant Garamond', serif;
 	font-weight: bold;
 	margin-left: 15px;
-  background-color: #EFC94C;
+  background-color: #8CC6D7;
   border: none;
   color: white;
   padding: 10px 10px;
@@ -114,14 +115,14 @@ input {
 .logout_text {
 	color:#FFFFFF;
 	text-decoration: none;
-	background-color: #225378;
+	background-color: #E0B13D;
 	padding-left: 10px;
 }
 
 .color_button {
 	font-family: 'Cormorant Garamond', serif;
 	font-weight: bold;
-  background-color: #EFC94C;
+  background-color: #8CC6D7;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -166,11 +167,11 @@ input {
 #logout_link {
 	padding-top: 10px;
 	text-align: left;
-	height: 40px;
+	height: 45px;
 	display: inline-block;
 	width: 100%;
 	font-size: 20px;
-	background-color: #225378;
+	background-color: #E0B13D;
 }
 
 
@@ -199,6 +200,7 @@ font-size: 100px;
 
 #landing_text{
 	margin-top: 20px;
+	font-size: 400%;
 }
 
 #ingredients_list {
@@ -212,7 +214,7 @@ font-size: 100px;
 }
 
 #numbers {
-	margin-left: 20%;
+	margin-left: 30%;
 }
 #show_page {
 	text-align: center;
