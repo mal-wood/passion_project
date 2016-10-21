@@ -80,9 +80,14 @@ ol {
 	margin-bottom: 0px;
 }
 
-li {
-/*	text-align: left;*/
-list-style: none
+ul {
+	text-align: center;
+	padding-left: 45%; 
+	padding-right: 45%;
+}
+
+ul li{
+	text-align: left;
 }
 
 form {
@@ -158,7 +163,7 @@ input {
 }
 
 #send_ingredients {
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 
 #recipe_link {
@@ -190,7 +195,7 @@ font-size: 100px;
 }
 
 #edit_ingredients {
-	margin-top: 0px;
+	padding-top: 0px;
 }
 
 #carrot {
