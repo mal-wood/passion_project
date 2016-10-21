@@ -11,6 +11,6 @@
 			<li><p><span id="left_align"><%= direction %></span></p></li>
 			<%end%>
 		</ol>
-	<form action="/sms/<%=@recipe.id%>" method="post">
+	<form id="send_ingredients" action="/sms/<%=@recipe.id%>" method="post">
 		<button name="send_text" type="submit" class="color_button">Send ingredients</button>
 	</form>
