@@ -223,6 +223,7 @@ font-size: 100px;
 }
 #show_page {
 	text-align: center;
+	margin-left: 20%;
 	display: inline-block;
 }
 
