@@ -32,8 +32,6 @@ end
 
 put '/user/:user_id/recipes/:id' do
 	@recipe = Recipe.find(params[:id])
-	p params[:recipe]
-	p "88888"
 	@recipe.update_attributes(params[:recipe])
 	@user = User.find(params[:user_id])
 	if @recipe.save
@@ -47,5 +45,8 @@ delete '/user/:user_id/recipes/:id' do
 	@user = User.find(params[:user_id])
 	@recipe = Recipe.find(params[:id])
 	@recipe.destroy
-	redirect "/user/#{@user.id}/recipes"
+	if request.xhr?
+	else
+		redirect "/user/#{@user.id}/recipes"
+	end
 end

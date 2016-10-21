@@ -2,15 +2,15 @@
 	<div id="table_div">
 		<table>
 				<% @recipes.each do |recipe| %> 
-				<% if recipe.user_id == session[:id] %>
-			<tr>	
+				<% if recipe.user_id == session[:id] %> 
+			<tr id="row_to_delete">	
 				<td id="recipe_list">
 					<a href="/user/<%=@user.id%>/recipes/<%="#{recipe.id}"%>" id="recipe_link"><%= recipe.title%></a>
 				</td>
 				<td>
-					<form action="/user/<%=@user.id%>/recipes/<%="#{recipe.id}"%>" method="post">
+					<form id="delete_form" action="/user/<%=@user.id%>/recipes/<%="#{recipe.id}"%>"method="post">
 						<input type="hidden" name="_method" value="delete">
-						<button class="delete_button" id="new_recipe" name="new_recipe" type="submit">Delete</button>
+						<button id="delete_recipe" class="delete_button" name="new_recipe" type="submit">Delete</button>
 					</form>
 				</td>
 			</tr>
