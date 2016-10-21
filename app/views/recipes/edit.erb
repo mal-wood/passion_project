@@ -1,0 +1,12 @@
+<h1>Edit: <%= @recipe.title %></h1>
+ 
+ <form action='/user/<%=session[:id]%>/recipes/<%=@recipe.id%>' method='post'>
+ 	<label for="name">Name:</label>
+ 	<input type="text" name="recipe[title]" value="<%= @recipe.title %>"/><br>
+ 	<label for="cuisine">Cuisine:</label>
+ 	<input type="text" name="recipe[ingredients]" value="<%= @recipe.ingredients %>"/><br>
+ <label for="address">Address:</label>
+ 	<input type="text" name="recipe[directions]" value="<%= @recipe.directions %>"/><br>
+	<input type="hidden" name="_method" value="put">
+	<input type="submit" value="Update Recipe"/>
+</form>
