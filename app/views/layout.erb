@@ -16,22 +16,16 @@
 <body>
 	<% if logged_in? %>
         <span id="logout_link">
-          <a href="/sessions/delete" id="logout_text">
-            <span id="logout_text">Logout</span></a>
-          <a href="/user/<%=session.id%>/recipes" id="logout_text">My Recipe Box</a>
+          <a href="/sessions/delete" class="logout_text">
+            <span class="logout_text">Logout |</span> </a>
+              <a href="/user/<%=session[:id]%>/recipes" class="logout_text">| My Recipe Box |</a>
+              <a href="/users/<%=session[:id]%>" class="logout_text">| Add Recipe</a>
         </span>
       <% else %>
       <%= @errors %>
-       <!--  <form align="center" action="/sessions" method="post">
-          <div id="login_bar"><label id="form_label">email:</label><input type="email" name="email">
-
-          <label id="form_label">password:</label><input id="password_input" type="password" name="password">
-   
-          <input class="color_button" type="submit" value="login">
-        <text>   </text>
-        <a href="/users/new">create account</a>
-        </div></form> -->
       <% end %>
   <%= yield %>
 </body>
+<footer>
+</footer>
 </html>
