@@ -16,9 +16,9 @@
 	<% if logged_in? %>
         <span id="logout_link">
           <a href="/sessions/delete" class="logout_text">
-            <span class="logout_text">Logout |</span> </a>
-              <a href="/user/<%=session[:id]%>/recipes" class="logout_text">| My Recipe Box |</a>
-              <a href="/users/<%=session[:id]%>" class="logout_text">| Add Recipe</a>
+            <span class="logout_text">Logout </span> </a>
+              <a href="/users/<%=session[:id]%>" class="logout_text">| Add Recipe |</a>
+              <a href="/user/<%=session[:id]%>/recipes" class="logout_text">My Recipe Box </a>
         </span>
       <% else %>
       <%= @errors %>
@@ -26,5 +26,5 @@
   <%= yield %>
 </body>
 </div>
-<div class="footer">Welcome.</div>
+<div class="footer"></div>
 </html>
